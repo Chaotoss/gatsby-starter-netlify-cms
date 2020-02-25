@@ -27,6 +27,20 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "Instruments"
+    label: "Instruments"
+    folder: "src/pages/instruments"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "instruments"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Type", name: "type", widget: "relation"}
+      - {label: "Price", name: "price", widget: "double"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+
   - name: "pages"
     label: "Pages"
     files:
